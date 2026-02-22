@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domus Regia | Artículos de Decoración Exclusivos</title>
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1><a href="/">Domus Regia</a></h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/catalogo">Catálogo</a></li>
+                </ul>
+        </nav>
+        
+        <div class="user-actions">
+            <a href="/login" class="login-btn"><i class="fas fa-user"></i> Ingresar</a>
+            <a href="/carrito" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="badge">0</span> </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Transforma tus espacios con elegancia</h2>
+                <p>Descubre nuestra exclusiva selección de artículos de decoración diseñados para dar vida a tu casa, oficina o negocio.</p>
+                <a href="/catalogo" class="btn-primary">Ver Catálogo</a>
+            </div>
+        </section>
+
+        <section class="categorias">
+            <h3>Encuentra tu estilo ideal</h3>
+            <div class="grid-categorias">
+                
+                <article class="categoria-card">
+                    <img src="/assets/img/casa-preview.jpg" alt="Decoración para el Hogar">
+                    <div class="card-info">
+                        <h4>Hogar</h4>
+                        <p>Calidez y confort para cada rincón de tu casa.</p>
+                        <a href="/catalogo?categoria=casa" class="btn-secondary">Explorar</a>
+                    </div>
+                </article>
+
+                <article class="categoria-card">
+                    <img src="/assets/img/oficina-preview.jpg" alt="Decoración para Oficinas">
+                    <div class="card-info">
+                        <h4>Oficinas</h4>
+                        <p>Ambientes profesionales que inspiran productividad.</p>
+                        <a href="/catalogo?categoria=oficina" class="btn-secondary">Explorar</a>
+                    </div>
+                </article>
+
+                <article class="categoria-card">
+                    <img src="/assets/img/negocio-preview.jpg" alt="Decoración para Negocios">
+                    <div class="card-info">
+                        <h4>Negocios</h4>
+                        <p>Atrae y cautiva a tus clientes con espacios únicos.</p>
+                        <a href="/catalogo?categoria=negocio" class="btn-secondary">Explorar</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h4>Domus Regia</h4>
+                <p>Elevando el diseño de tus espacios.</p>
+            </div>
+            
+            <div class="footer-social">
+                <p>Síguenos en nuestras redes:</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Domus Regia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/carrito.js"></script>
+</body>
+</html>
