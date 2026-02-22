@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta | Domus Regia</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-light flex-center">
+
+    <div class="auth-container">
+        <div class="auth-header">
+            <h1><a href="/">Domus Regia</a></h1>
+            <p>Crea tu cuenta para una experiencia exclusiva</p>
+        </div>
+
+        <form action="/procesar_registro" method="POST" class="auth-form">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <div class="input-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="correo">Correo Electrónico</label>
+                <div class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <div class="input-icon">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" required minlength="8">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección de Envío (Opcional)</label>
+                <div class="input-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="direccion" name="direccion" placeholder="Calle, Número, Distrito">
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary w-100 mt-1">Crear Cuenta</button>
+        </form>
+
+        <div class="auth-footer">
+            <p>¿Ya tienes una cuenta? <a href="/login">Inicia sesión</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

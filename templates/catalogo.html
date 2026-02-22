@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Domus Regia</title>
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <header>
+        <div class="logo">
+            <h1><a href="/">Domus Regia</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/catalogo" class="active">Catálogo</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="/login" class="login-btn"><i class="fas fa-user"></i> Ingresar</a>
+            <a href="/carrito" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container catalogo-layout">
+        
+        <aside class="filtros">
+            <h3>Filtrar por</h3>
+            
+            <div class="grupo-filtro">
+                <h4>Categoría</h4>
+                <ul>
+                    <li><label><input type="checkbox" name="categoria" value="casa"> Hogar</label></li>
+                    <li><label><input type="checkbox" name="categoria" value="oficina"> Oficina</label></li>
+                    <li><label><input type="checkbox" name="categoria" value="negocio"> Negocio</label></li>
+                </ul>
+            </div>
+
+            <div class="grupo-filtro">
+                <h4>Rango de Precio</h4>
+                <ul>
+                    <li><label><input type="radio" name="precio" value="bajo"> Menos de S/ 100</label></li>
+                    <li><label><input type="radio" name="precio" value="medio"> S/ 100 - S/ 300</label></li>
+                    <li><label><input type="radio" name="precio" value="alto"> Más de S/ 300</label></li>
+                </ul>
+            </div>
+            
+            <button class="btn-secondary w-100">Aplicar Filtros</button>
+        </aside>
+
+        <section class="productos-seccion">
+            <div class="encabezado-productos">
+                <h2>Colección Completa</h2>
+                <div class="ordenar-por">
+                    <label for="orden">Ordenar:</label>
+                    <select id="orden">
+                        <option value="destacados">Destacados</option>
+                        <option value="menor-precio">Menor Precio</option>
+                        <option value="mayor-precio">Mayor Precio</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid-productos">
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="/assets/img/prod1.jpg" alt="Lámpara Minimalista">
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria-etiqueta">Oficina</span>
+                        <h4>Lámpara Minimalista de Escritorio</h4>
+                        <p class="precio">S/ 120.00</p>
+                        <button class="btn-primary btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="/assets/img/prod2.jpg" alt="Jarrón de Cerámica">
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria-etiqueta">Hogar</span>
+                        <h4>Jarrón de Cerámica Texturizada</h4>
+                        <p class="precio">S/ 85.00</p>
+                        <button class="btn-primary btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </article>
+
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="/assets/img/prod3.jpg" alt="Sillón Ejecutivo">
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria-etiqueta">Negocio</span>
+                        <h4>Sillón Ejecutivo en Cuero</h4>
+                        <p class="precio">S/ 450.00</p>
+                        <button class="btn-primary btn-add-cart">Agregar al Carrito</button>
+                    </div>
+                </article>
+                
+                </div>
+            
+            <div class="paginacion">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h4>Domus Regia</h4>
+                <p>Elevando el diseño de tus espacios.</p>
+            </div>
+            <div class="footer-social">
+                <p>Síguenos en nuestras redes:</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Domus Regia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/carrito.js"></script>
+</body>
+</html>

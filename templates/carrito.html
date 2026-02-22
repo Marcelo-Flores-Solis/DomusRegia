@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras | Domus Regia</title>
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <header>
+        <div class="logo">
+            <h1><a href="/">Domus Regia</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/catalogo">Catálogo</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="/login" class="login-btn"><i class="fas fa-user"></i> Ingresar</a>
+            <a href="/carrito" class="cart-btn active">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container layout-carrito">
+        <section class="lista-carrito">
+            <h2>Tu Carrito de Compras</h2>
+            <div id="contenedor-carrito" class="items-carrito">
+                </div>
+        </section>
+
+        <aside class="resumen-compra">
+            <h3>Resumen del Pedido</h3>
+            
+            <div class="fila-resumen">
+                <span>Subtotal</span>
+                <span id="resumen-subtotal">S/ 0.00</span>
+            </div>
+            <div class="fila-resumen">
+                <span>IGV (18%)</span>
+                <span id="resumen-igv">S/ 0.00</span>
+            </div>
+            <div class="fila-resumen total">
+                <span>Total a Pagar</span>
+                <span id="resumen-total">S/ 0.00</span>
+            </div>
+
+            <a href="/checkout" class="btn-primary w-100 btn-checkout">Proceder al Pago</a>
+            <a href="/catalogo" class="btn-secondary w-100 mt-1">Seguir Comprando</a>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Domus Regia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/carrito.js"></script>
+</body>
+</html>
